@@ -5,12 +5,12 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="ozellik.css">
-    <title>Meryem AL REFAI</title>
+    <title>iletisim</title>
 </head>
 <body>
-    <img src="pembe.jpg" class="resim1">
+<img src="pembe.jpg" class="resim1">
     <div class="Menu">
-        <h1 class="logo" id="logo">Meryem Al Refai</h1>
+        <h1 class="logo">Meryem Al Refai</h1>
         <ul>
             <li><a href="Ana sayfa.html">Ana Sayfa</a></li>
             <li><a href="hakkimda.html">Hakkımda</a></li>
@@ -22,22 +22,13 @@
 
         </ul>
     </div>
-   
-    <div class="resim">
-        <img src="mer.jpg" style=" width:400px;height:400px;border:2px; box-shadow:0 4px 10px rgb(0, 0,0); margin-top: 50px;"><br>
-        
-              <div style="width:1000px;height:200px; border:3px;margin:50px; margin-top:15px; margin-left: 250px;">
-                <p>
-               MERHABA:)
-               BEN MERYEM;
-               BENİM SAYFAMA HOŞ GELDİNİZ.
-               BENİM HAKKIMDA DAHA FAZLA BİLGİ EDİNMEK İSTİYORSANIZ YUKARIDAN BAKABİLİRSİNİZ.<br>
-              </p>
-             </div>
-
+    <div class="php" >
+       <?php
+         echo " VERILERINIZ ALINDI TEŞEKKÜRLER <br>";
+         
+         
+        ?>
     </div>
-    
-        
     
 </body>
 </html>
