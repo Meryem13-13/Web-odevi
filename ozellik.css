@@ -6,17 +6,19 @@
     float: left;
     font-family: cursive;
     color: rgb(239, 247, 242);
+    display: flex;
 
 }
 .Menu{
-    width: 100%;
+    width: 1470px;
     height: 60px;
     margin: 10px;
     background-color:rgb(184, 83, 130);
     box-shadow:0 4px 10px rgb(0, 0,0);
     display:flex;
     margin-right:40px;
-    
+    overflow: hidden;
+   
 }
 .Menu li{
     display: inline-block;
@@ -42,8 +44,8 @@
     color: rgb(47, 30, 10);
 }
 .resim1{
-   width:100%;
-   height: 120%;
+   width:1500px;
+   height:1300px;
    border: 2;
    box-shadow:0 4px 10px rgb(0, 0,0);
     display:flex;
@@ -153,29 +155,429 @@ p{
 }
 .tablo1{
     width:1450px;
-    height: 550px;
+    height: 590px;
     border-collapse: collapse;
-
-}
-.td1{
-  color:black;
-  margin-left: 20 px;
-
+    margin-right:80px;
+    margin-bottom: 90px;
+    border-style: dotted;
+  border-width: thick;
+  overflow: hidden;
 
 }
 .tablo2{
-    width: 1450px;
-    height: 550px;
+    width: 1400px;
+    height: 500px;
     background-color: rgb(253, 243, 250);
-    margin: 20px;
+    margin-top: 15px;
+    margin-bottom: 70px;
+    margin-right: 70px;
+    margin-left: 30px;
+    overflow: hidden;
+
+}
+.h6{
+    text-align: center;
+    font-size: large;
+    font-family: cursive;
+     color:rgb(12, 12, 12);
+     padding: 2px;
+
+}
+.p1{
+    text-align: left;
+    color: rgb(0, 0, 0);
+    font-size: 15px;
+    font-family: cursive;
+   margin-top: -30px;
+    padding: 3px;
+    
+}
+.baslik{
+    background-color: rgb(184, 83, 130);
+    height: 50px;
+    width: 130px;
+    box-shadow:0 4px 10px rgb(0, 0,0);
+    margin-bottom: 35px;
+    margin-top: -40px;
+  
+}
+
+
+.php{
+    width: 800px;
+    height: 400px;
+    background-color: aliceblue;
+    margin-top: 100px;
+    margin-bottom: 100px;
+    margin-left: 400px;
+    padding-top: 50px;
+    padding-left: 60px;
+    font-size: larger;
+    font-family: cursive;
+    box-shadow:0 4px 10px rgb(0, 0,0);
+    position: relative;;
+}
+.miras{
+    width: 1400px;
+    height: 600px;
+    margin: 25px;
+    position: absolute;
+    margin-top: 15px;
+
+}
+.miras1{
+    width: 1300px;
+    height: 250px;
+    background-color:rgb(184, 83, 130);
+    margin: 5px;
+    margin-left: 50px;
+    position:relative;
+    box-shadow:0 4px 10px rgb(0, 0,0);
 }
     
+.miras3{
+    width:400px;
+    height: 220px;
+    margin: 8px;
+    background-color: rgb(234, 159, 229);
+    position: relative;
+    overflow: scroll;
+    display: inline-block;
+    margin-left: 22px;
+    box-shadow:0 4px 10px rgb(0, 0,0);
+}
+.miras3 p{
+    font-size:15px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    text-align: left;
+    margin: 5px;
+    margin-top: 10px;
+    box-shadow:0 4px 10px rgb(0, 0,0);
+
+}
+.hakkim{
+    width: 1200px;
+    height: 1000px;
+}
+
+.hakkim2{
+    background-color: rgb(236, 189, 215);
+    position: relative;
+    overflow: scroll;
+    display: inline-block;
+    margin-left: 22px;
+    box-shadow:0 4px 10px rgb(0, 0,0);
+    width: 600px;
+    height: 280px;
+    margin: 2px;
+    margin-left: 70px;
+}
+.hakkim2 p{
+    font-size:18px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    text-align: left;
+    margin: 5px;
+    margin-top: 10px;
+    
+}
+.manzara{
+    width: 160px;
+    height: 200px;
+    margin: 30px;
+    box-shadow:0 4px 10px rgb(0, 0,0);
+    display:inline-block;
+    margin-bottom: 25px;
+
+}
+.toggle_btn{
+    color:rgb(255, 255, 255);
+    font-size: 1.5rem;
+    cursor: pointer;
+    right: 2rm;
+    display: none;
+}
+.action_btn{
+    background-color: rgb(113, 127, 140);
+    color: white;
+    text-align: center;
+    padding: 0.9rem 1rem;
+    border: none;
+    outline: none;
+    border-radius:20px;
+    font-size:0.8rem;
+    font-weight: bold;
+    cursor: pointer;
+    transition: scale 0.2ease;
+
+}
+.action_btn:hover{
+    scale:1.05;
+    color:antiquewhite;
+}
+.action_btn:active{
+    scale:0.95 ;
+}
+.dropdown_menu {
+    display:none;
+    position: absolute;
+    margin:4px;
+    top:60px;
+    width:100% ;
+    background-color:rgb(184, 83, 130);
+    box-shadow:0 4px 10px rgb(0, 0,0);
+    backdrop-filter: blur(15px);
+    border-radius: 10px;
+    overflow: hidden;
+    transition: height 0.2s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+.dropdown_menu li{
+    padding: 0.7rem;
+    display:flex;
+    align-items: center;
+    justify-content:center ;
+
+}
+.Menu li{
+    display: inline-block;
+    margin: 15px;
+    position: relative;
+    left: 250px;
+   bottom: 10px;
+}
+.dropdown_menu li a{
+    text-decoration: none;
+    color: rgb(247, 244, 244);
+    font-size: larger;
+    font-family: cursive;
+}
+.dropdown_menu li a:hover{
+    color: rgb(163, 134, 153);
+}
+.dropdown_menu li a:visited{
+    color:rgb(246, 174, 174);
+}
+.dropdown_menu .action_btn{
+    width: 100%;
+    display: flex;
+    justify-content:center ;
+
+}
+.fotolar{
+    width: 1400px; 
+    height: 300px;
+    
+     margin: 30px;
+}
+.baslik5{
+    text-align: center; 
+    font-size: larger;
+     margin-top: 10px;
+}
+.fotolar1{
+    width: 1400px; 
+    height: 300px;
+    margin:30px ;
+}
+.yenii{
+    margin-left: 40px;
+     margin-top: 30px;
+}
+.div22{
+    display: none;
+    width:100%;
+    height: 100%;
+    border-collapse: collapse;
+    margin-right:80px;
+    margin-bottom: 90px;
+    border-style: dotted;
+  border-width: thick;
+  overflow: hidden;
+  background-color: rgb(236, 189, 215);
+  position: absolute;
+  font-family: cursive;
+  text-align: center;
+
+    
+}
+.div3{
+    box-shadow:0 4px 10px rgb(0, 0,0); ;
+}
+.resimp{
+    border: 2;
+    box-shadow:0 4px 10px rgb(0, 0,0);
+    display: none;
+     z-index:-1;
+     position: absolute;
+     width: 100%;
+    
+     
+
+}
+.sam{
+    text-align: center;
+}
+
+
+
+@media screen and (max-width :600px) {
+    .logo{
+        
+        color:rgb(216, 102, 195);
+    }
    
+    .resim1 {
+       display:none;
+    
+       
+    }
+    .Menu li{
+        display:none;
+    }
+    .dropdown_menu{
+        display: block;
+    }
+    
+    .Menu{
+       display: none;
+    }
+    .resim{
+        margin-top: 400px;
+    }
+    p{
+        text-align: left;
+        font-size: 14px;
+        left: 2rem;
+        width: 50%;
+        margin-left: -230px;
+    }
+    .hakkim{
+        margin-top:420px;
+        
+    }
+    .hakkim2{
+        display: block;
+        width: 90%;
+        height: 60%;
+        margin-left: 20px;
+    }
+    .fotolar1{
+        display: block;
+    }
+    .fotolar{
+        display: block;
+        margin-top: 300px;
+        margin-left: 20px;
+        width: 35%;
+        height: 700px;
+        
+    }
+    .manzara{
+        display: block;
+        width: 95%;
+        height: 70%;
+        margin: 6px;
+    }
 
+   .baslik5{
+        
+      text-align: left;
+      box-shadow: auto;
+      
+   } 
+   .fotolar1{
+    width: 35%;
+    height: 70%;
 
+   }
+   .ilkdiv{
+    margin-top: 450px;
+    margin-left: 90px;
+   }
+   .ilkdiv h1{
+    text-align: left;
+   }
+   .sehir{
+    display: block;
+    margin-left: -22px;
+    margin-right: 80px;
+   }
+   .sehir1{
+    width: 100%;
+    
+   }
+   .yenii{
+    margin-top: 450px;
+    color:rgb(47, 39, 46);
+    text-align: center;
+    font-family: cursive;
+   }
+   .tablo1{
+    display: none;
+   }
+   .tablo2{
+    display: none;
+   }
+   .div{
+    position: absolute;
+   }
+   .div22{
+    display: block;
+   }
+   .resimp{
+    display: block;
+    height: 5000px;
+   }
+   .miras{
+    margin-left: -50px;
+   }
+    .miras3{
+    display: block;
+    margin-top: 30px;
+    
 
+   }
+   .miras1{
+    width: 100%;
+    height: 750px;
+    background-color:rgb(184, 83, 130);
+    margin: 5px;
+    margin-left: 50px;
+    position:relative;
+    box-shadow:0 4px 10px rgb(0, 0,0);
 
+   }
+   .sam{
+    margin-top: 450px;
+   }
+   .miras3 p{
+    width: 100%;
+    font-size:15px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    text-align: center;
+    margin: 5px;
+    margin-top: 10px;
+    box-shadow:0 4px 10px rgb(0, 0,0);
 
+}
+.hakkim2 p{
+    width: 100%;
+    font-size:18px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    text-align: center;
+    margin: 5px;
+    margin-top: 10px;
+    
+}
+.sehir p{
+    width: 100%;
+    font-size:15px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    text-align: center;
+    margin: 5px;
+    margin-top: 10px;
+    
+}
+}
 
 
 
